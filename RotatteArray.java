@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RotatteArray {
     public static void rotate(int[] arr, int d) {
         int[] temp = new int[arr.length];
@@ -18,6 +20,9 @@ public class RotatteArray {
     }
 
     public static void main(String[] args) {
+        int arr[] = { 1, 3, 2, 5, 2, 4 };
+        rotate(arr, 0);
+        System.out.println(Arrays.toString(arr));
 
     }
 }
