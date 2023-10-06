@@ -19,6 +19,8 @@ public class RotatteArray {
 
     }
 
+    
+
     public static void main(String[] args) {
         int arr[] = { 1, 3, 2, 5, 2, 4 };
         rotate(arr, 0);
