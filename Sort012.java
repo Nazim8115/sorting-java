@@ -13,6 +13,7 @@ public class Sort012 {
                 int temp = arr[i];
                 arr[i] = arr[nextZero];
                 arr[nextZero] = temp;
+                i++;
                 nextZero++;
             } else if (arr[i] == 2) {
                 int temp = arr[i];
@@ -23,6 +24,10 @@ public class Sort012 {
                 i++;
             }
         }
+    }
+
+    public static void short012Nd(int arr[],int n){
+        
     }
 
     public static void main(String[] args) {
