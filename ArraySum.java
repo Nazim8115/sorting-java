@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArraySum {
     public static void sumOfTwoArrays(int arr1[], int arr2[], int output[]) {
         int num1 = 0;
@@ -21,8 +23,12 @@ public class ArraySum {
     }
 
     public static void main(String[] args) {
-        int arr1[] = { 2, 3, 2, 1, 6, 5 };
-        int arr2[] = { 7, 38, 2, 1, 3 };
+        int arr1[] = { 6, 2, 4 };
+        int arr2[] = { 7, 5, 6 };
+        int n = (arr1.length > arr2.length) ? arr1.length : arr2.length;
+        int res[] = new int[n + 1];
+        sumOfTwoArrays(arr1, arr2, res);
+        System.out.println(Arrays.toString(res));
 
     }
 }
